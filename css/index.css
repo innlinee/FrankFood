@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("assets/abacaxi.jpg");
+}
+
+button{
+    cursor: pointer;
+}
+
+.container-principal{
+    min-height: 100vh;
+    width: 100%; 
+}
+
+#logo{
+    height: 200px;
+    width: 200px;
+}
+
+.navbar{
+    width: 93%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 1rem 3rem;
+}
+
+.botoes{
+    margin-top: 30px;
+}
+
+#logo{
+    margin-right: auto;
+}
+
+#btn-cadastro{
+    height: 3rem;
+    width: 6rem;
+    border-style: none;
+    border-radius: 5px;
+    color: #00472f;
+    font-size: 1rem;
+    margin-top: -90px;
+    background-color: transparent;
+}
+
+#btn-cadastro:hover{
+  color: black;
+}
+
+#btn-parceiro{
+    height: 3rem;
+    width: 8rem;
+    border-style: none;
+    border-radius: 5px;
+    color: #00472f;
+    font-size: 1rem;
+    margin-top: -90px;
+    background-color: transparent;
+}
+
+#btn-parceiro:hover{
+  color: black;
+}
+
+#btn-login{
+    margin-top: -100px;
+    height: 3rem;
+    width: 6rem;
+    background: #00472f;
+    border-style: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    /*#00472f*/
+}
+
+.settings{
+  margin-top: 25px;
+  width: 5px;
+  height: 50px;
+}
+
+.settings img{
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-left: -15px;
+}
+
+.story-card{
+    min-width: 950px;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-card-title{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    /* color: rgb(83, 77, 77); */
+}
+
+.story-card-subtitle{
+    font-weight: 400;
+    color: grey;
+    /* color: rgb(83, 77, 77) ; */
+}
+
+.form-container{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 155px;
+}
+
+.form-container-restaurant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-restaurant{
+    width: 480px;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+}
+
+#btn-form{
+    padding: 1.2rem;
+    color: white;
+    background: red;
+    border-style: none;
+    font-size: 1rem;
+    border-radius: 50px;
+    margin: 15px;
+}
+  
+/* Código do Carrosel */
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: -550px;
+}
+
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.card-image{
+  position: relative;
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #FFF;
+}
+
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  font-weight: bold;
+}
+
+.description{
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+}
+
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #00472f;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover{
+  background: #00472f;
+}
+
+/* Tons de azul 
+  color: #6E93f7 #265DF2 #4070F4; */
+
+.swiper-navBtn{
+  color: #00472f;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+  color: #00472f;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+  color: #00472f;
+}
+
+.swiper-button-next{
+  right: 0;
+  color: #00472f;
+}
+
+.swiper-button-prev{
+  left: 0;
+  color: #00472f;
+}
+
+.swiper-pagination-bullet{
+  background-color: #00472f;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #00472f;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+/* Rodapé */
+
+#footer {
+    margin-top: 75px;
+    background: #252a34;
+    color: #d7cdcb;
+    padding: 30px;
+    text-align: center;
+    height: 35px;
+}

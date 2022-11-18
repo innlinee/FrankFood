@@ -1,0 +1,157 @@
+body{
+    background-color: #e1dfe0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.area-login{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d7cdcb;
+    border-radius: 10px;
+    width: 525px;
+    height: 490px;
+    padding: 35px;
+}
+
+.login form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login input{
+    margin-top: 10px;
+    background-color: #252a34;
+    padding-left: 10px;
+    color: white    ;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.login img{
+    width: 220px;
+    height: auto;
+}
+
+#btn-inicio{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    margin-right: auto;
+    color: #00472f;
+}
+
+#btn-inicio:hover {
+    color: #00af75;
+}
+
+#btn-inicio:active {
+    color: #252a34;
+}
+
+.login::placeholder{
+    color: #cbd0f7;
+    font-size: 14px;
+}
+
+form [type="submit"]{
+    display: block;
+    background-color: #00472f;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p{
+    color: #252a34;
+    font-size: 15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.checkbox{
+    height: 20px;
+    align-items: center;
+    font-family: "Rubik";
+    font-size: 15px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.checkbox input{
+    display: none;
+}
+
+.checkbox input + label:before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.checkbox input:checked + label:before{
+    background: url('./assets/check.svg') no-repeat center;
+}
+
+footer{
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    border-bottom: 2px solid #252a34;
+}
+
+footer a{
+    color: #252a34;
+    /* color: #cbf0ee; */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Rubik';
+    font-style: italic;
+}
+
+footer span a{
+    font-weight: 300;
+    color: #252a34;
+    /* color: #aee1e8; */
+}
+
+footer a:hover{
+    color: white;
+}
+
+footer span a:hover{
+    color: whitesmoke;
+}
+
+#footer {
+    margin-top: 75px;
+    background: #252a34;
+    color: #d7cdcb;
+    padding: 30px;
+    text-align: center;
+    height: 35px;
+}
